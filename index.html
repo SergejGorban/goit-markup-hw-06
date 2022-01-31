@@ -441,11 +441,16 @@
                         <p class="modal-title-in">Комментарий</p>
                         <textarea class="modal-comments" name="feedback" rows="5" placeholder="Введите текст"></textarea>
                     </label>
-                    <label class="modal-label-chek">
-                        <input type="checkbox" name="licenth" checked /> Соглашаюсь с рассылкой и принимаю 
-                        <span><a class="link" href="">Условия договора</a></span>
-                    </label>
-                    <label class="modal-btn">
+                        <input class="modal-checkbox visually-hidden" id="policy" type="checkbox" name="licenth" />
+                            <label class="modal-label-check" for="policy">
+                                <span class="modal-checkbox-text">
+                                    <svg class="modal-icon-check" width="11" height="8">
+                                        <use href="images/icons.svg#icon-chekbox"></use>
+                                    </svg>
+                                </span>Соглашаюсь с рассылкой и принимаю
+                                <a class="link modal-link" href="">Условия договора</a>
+                            </label>
+                    <label class="modal-label-btn">
                         <button class="modal-btn" type="submit">Отправить</button>
                     </label>
                 </form>
