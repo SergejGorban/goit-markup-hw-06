@@ -857,6 +857,7 @@ body {
 }
 
 .modal-label-check {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -867,15 +868,23 @@ body {
     color: var(--text-color);
 }
 
+.checkbox-block {
+    padding-left: 13px;
+}
+
 .modal-checkbox-text {
+    position: absolute;
     width: 16px;
     height: 15px;
     border-radius: 2px;
-    justify-content: center;
+    left: 4px;
 }
 
 .modal-icon-check {
+    position: absolute;
     fill: var(--btn-color);
+    right: 3px;
+    top: 4px;
 }
 
 .modal-checkbox:checked + .modal-label-check span {
@@ -898,9 +907,7 @@ body {
     margin-left: 5px;
 }
 
-
-
-.modal-label-btn {
+.modal-block-btn {
     display: flex;
     justify-content: center;
     align-items: center;
