@@ -524,7 +524,7 @@ body {
 .footer-social-title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1/14;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--btn-color);
@@ -788,6 +788,8 @@ body {
 }
 
 .modal-form {
+    width: 100%;
+    
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 12px;
@@ -822,7 +824,6 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     resize: none;
-    margin-bottom: 20px;
 }
 
 ::placeholder {
@@ -857,8 +858,7 @@ body {
 }
 
 .modal-label-check {
-    position: relative;
-    display: flex;
+    position: absolute;
     justify-content: center;
     align-items: center;
     font-weight: 400;
@@ -866,10 +866,15 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    padding-left: 20px;
 }
 
 .checkbox-block {
+    display: flex;
     padding-left: 13px;
+    height: 24px;
+    position: relative;
+    margin-top: 20px;
 }
 
 .modal-checkbox-text {
@@ -877,7 +882,16 @@ body {
     width: 16px;
     height: 15px;
     border-radius: 2px;
-    left: 4px;
+    left: 0;
+    top: 4px;
+}
+
+.modal-checkbox {
+    position: absolute;
+    top: 4px;
+    width: 16px;
+    height: 15px;
+    border-color: var(--title-color);
 }
 
 .modal-icon-check {
