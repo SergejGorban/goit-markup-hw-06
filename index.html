@@ -442,17 +442,16 @@
                         <textarea class="modal-comments" name="feedback" rows="5" placeholder="Введите текст"></textarea>
                     </label>
                     <div class="checkbox-block">
-                        <input class=" modal-checkbox " id="policy" type="checkbox" name="licenth" />
-                            <span class="modal-checkbox-text">   
-                                <label class="modal-label-check" for="policy">
-                                
-                                    <svg class="modal-icon-check" width="11" height="8">
-                                        <use href="images/icons.svg#icon-chekbox"></use>
-                                    </svg>
-                                Соглашаюсь с рассылкой и принимаю
-                                <a class="link modal-link" href="">Условия договора</a>
-                                </label>
+                        <input type="checkbox" name="licenth" id="policy" type="checkbox" class="modal-checkbox" is-hidden>
+                        <label for="policy" class="modal-label-check">
+                            <span class="modal-checkbox-text">
+                                <svg class="modal-icon-check" width="11" height="8">
+                                    <use href="images/icons.svg#icon-chekbox"></use>
+                                </svg>
                             </span>
+                            Соглашаюсь с рассылкой и принимаю
+                            <a class="link modal-link" href="">Условия договора</a>
+                        </label>
                     </div>
                     <div class="modal-block-btn">
                         <button class="modal-btn" type="submit">Отправить</button>
