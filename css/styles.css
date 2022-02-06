@@ -866,46 +866,34 @@ body {
 }
 
 .modal-label-check {
-    justify-content: center;
-    align-items: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);
-    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.modal-label-check::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-color);
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.modal-checkbox:checked + .modal-label-check::before {
+    border: none;
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .checkbox-block {
-    position: relative;
-    display: flex;
     margin-top: 20px;
-}
-
-.modal-checkbox-text {
-    border-radius: 2px;
-}
-
-.modal-checkbox {
-    width: 16px;
-    height: 15px;
-    border-color: var(--title-color);
-}
-
-.modal-icon-check {
-    position: absolute;
-    fill: var(--btn-color);
-    left: 3px;
-    top: 4px;
-}
-
-.modal-checkbox:checked + .modal-label-check span {
-    border: none;
-    background-color: var(--accent-color);
-}
-
-.modal-checkbox:checked + .modal-icon-check {
-    color: var(--btn-color);
 }
 
 .modal-link {
