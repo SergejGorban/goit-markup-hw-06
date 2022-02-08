@@ -855,7 +855,7 @@ body {
     position: absolute;
     left: 12px;
     top: 11px;
-    fill: rgba(33, 33, 33, 1);
+    fill: var(--title-color);
     transition: var(--property) var(--duration) var(--cubik);
 }
 
